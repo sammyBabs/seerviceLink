@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinTrade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+       android:id="@+id/ivReturnPic"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21"
+        android:src="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Enter a description of the issue..."
+        android:inputType="textMultiLine" />
+    
+    <LinearLayout
+        android:id="@+id/images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/ibTakePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cam" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next" 
+            android:contentDescription=""/>
+    </LinearLayout>
+
+</LinearLayout>
